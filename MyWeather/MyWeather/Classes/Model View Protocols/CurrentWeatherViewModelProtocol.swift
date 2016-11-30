@@ -32,7 +32,7 @@ extension CurrentWeatherViewModelProtocol {
     
     var apparentTemperature: String {
         get {
-            return String((model as HourlyWeatherProtocol).apparentTemperature)
+            return String(model.apparentTemperature)
         }
     }
     
