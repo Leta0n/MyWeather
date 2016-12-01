@@ -9,11 +9,10 @@
 import Foundation
 
 protocol HourlyWeatherViewModelProtocol: BaseWeatherViewModelProtocol {
-    
-    var model: HourlyWeatherModel { get set }
+	
+	typealias ModelType = HourlyWeatherModel
     
     var apparentTemperature: String { get }
-    
 }
 
 extension HourlyWeatherViewModelProtocol {

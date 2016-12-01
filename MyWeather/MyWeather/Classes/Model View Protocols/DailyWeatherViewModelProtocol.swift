@@ -9,8 +9,8 @@
 import Foundation
 
 protocol DailyWeatherViewModelProtocol: BaseWeatherViewModelProtocol {
-    
-    var model: DailyWeatherModel { get set }
+	
+	typealias ModelType = DailyWeatherModel
     
     var sunriseTime: String { get }
     var sunsetTime: String { get }

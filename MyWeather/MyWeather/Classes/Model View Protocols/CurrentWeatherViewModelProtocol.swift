@@ -9,9 +9,9 @@
 import Foundation
 
 protocol CurrentWeatherViewModelProtocol: BaseWeatherViewModelProtocol {
-    
-    var model: CurrentWeatherModel { get set }
-    
+	
+	typealias ModelType = CurrentWeatherModel
+	
     var nearestStormDistance: String { get }
     var nearestStormBearing: String { get }
     var apparentTemperature: String { get }
