@@ -10,15 +10,17 @@
 
 import UIKit
 
-class WeatherViewModel: NSObject {
+class DailyWeatherViewModel: NSObject, DailyWeatherViewModelProtocol {
 
     //MARK: - Properties
-    
+
+    var model: DailyWeatherModel = {
+        var model = DailyWeatherModel()
+        model.summary = "daily weather"
+        return model
+    }()
     
     //MARK: - Functions
-    
-       
-    //MARK: - Weather values
 
     
 }

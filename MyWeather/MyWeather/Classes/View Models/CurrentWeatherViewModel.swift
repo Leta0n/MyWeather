@@ -10,6 +10,14 @@ import UIKit
 
 class CurrentWeatherViewModel: NSObject, CurrentWeatherViewModelProtocol {
     
-    var model = CurrentWeatherModel()
+    //MARK: - Properties
+    
+    var model: CurrentWeatherModel = {
+        var model = CurrentWeatherModel()
+        model.summary = "current weather"
+        return model
+    }()
+    
+    //MARK: - Functions
     
 }

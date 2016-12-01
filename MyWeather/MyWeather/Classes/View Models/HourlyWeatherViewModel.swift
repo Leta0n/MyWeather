@@ -8,6 +8,16 @@
 
 import UIKit
 
-class HourlyWeatherViewModel: NSObject {
+class HourlyWeatherViewModel: NSObject, HourlyWeatherViewModelProtocol {
 
+    //MARK: - Properties
+    
+    var model: HourlyWeatherModel = {
+        var model = HourlyWeatherModel()
+        model.summary = "hourly weather"
+        return model
+    }()
+    
+    //MARK: - Functions
+    
 }
